@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Poppins&display=swap");
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	overflow-x: hidden;
+	background: url(../img/math1.png), rgba(0,0,0,0.7);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f-col {
+	flex-direction: column;
+}
+
+.wrapper {
+	/* margin: 2rem 0; */
+	padding: 0 0 2rem;
+	min-width: 500px;
+	max-width: 90vw;
+	background: rgba(0,0,0,0.7);
+	transition: 1.4s;
+}
+
+header {
+	background: #b8e994;
+	width: 100%;
+	padding: 0.5rem 0;
+}
+header img {
+	flex-basis: 20%;
+	padding: 0 2rem;
+}
+header .head_text {
+	font-family: 'Pacifico';
+	font-size: 2rem;
+	color: #111;
+	flex-basis: calc(80% - 20px);
+
+}
+header .head_text span {
+	color: #20c2e4;
+}
+.output {
+	display: block;
+	width: 100%;
+	text-align: center;
+	transition: 0.4s;
+	line-height: 2;
+	padding: 0.2rem 2rem;
+	font-family: Montserrat;
+	font-size: 1.5rem;
+}
+.wrapper hr {
+	transform: scaleX(0.1);
+	transition: 0.4s;
+	transition-delay: 1s;
+}
+
+.success {
+	background: #b8e994;
+	color: #111;
+}
+
+.error {
+	background: #d63031;
+	color: #eee;
+}
+
+
+main {
+	font-family: 'Montserrat'
+}
+
+.co {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.co label {
+	flex-basis: 10%;
+	font-size: 1.5rem;
+	font-family: 'Pacifico'
+}
+.co input {
+	flex-basis: 60%;
+	background: none;
+	line-height: 1.8;
+	border: 2px solid #20c2e4;
+	color: #eee;
+	outline: none;
+}
+
+.input_fields button {
+	cursor: pointer;
+	outline: none;
+	margin-top: 2rem;
+	padding: 2px 1.4rem;
+	background-color: #20c2e4;
+	border: 2px solid #eee;
+	color: #111;
+	font-family: 'Pacifico';
+	font-size: 1.5rem;
+	border-radius: 20px;
+	transition: 0.4s;
+}
+
+.input_fields button:hover {
+	background-color: #eee;
+	border: 2px solid #20c2e4;
+}
+
+@media (max-width: 700px) {
+	.wrapper {
+		min-width: 300px;
+		max-width: 90vw;
+		width: 90vw;
+	}
+
+	.wrapper header {
+		flex-direction: column;
+		padding: 1rem 0;
+	}
+}
